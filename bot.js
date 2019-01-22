@@ -16,17 +16,17 @@ client.on('message', message => {
     var argresult = message.content.split(` `).slice(1).join(' ');
       if (!developers.includes(message.author.id)) return;
       
-  if (message.content.startsWith(adminprefix + 'ply')) {
+  if (message.content.startsWith(adminprefix + 'pl')) {
     client.user.setGame(argresult);
       message.channel.send("**:white_check_mark: | The Playing Status Has Been Changed To : ``"
    + `${argresult}` + "``**")
   } else 
-  if (message.content.startsWith(adminprefix + 'wat')) {
+  if (message.content.startsWith(adminprefix + 'wa')) {
   client.user.setActivity(argresult, {type:'WATCHING'});
       message.channel.send("**:white_check_mark: | The Watching Status Has Been Changed To : ``"
    + `${argresult}` + "``**")
   } else 
-  if (message.content.startsWith(adminprefix + 'lis')) {
+  if (message.content.startsWith(adminprefix + 'li')) {
   client.user.setActivity(argresult , {type:'LISTENING'});
       message.channel.send("**:white_check_mark: | The Listening Status Has Been Changed To : ``"
    + `${argresult}` + "``**")
@@ -36,11 +36,11 @@ client.on('message', message => {
       message.channel.send("**:white_check_mark: | The Streaming Status Has Been Changed To : ``"
    + `${argresult}` + "``**")
   }
-  if (message.content.startsWith(adminprefix + 'setname')) {
+  if (message.content.startsWith(adminprefix + 'na')) {
   client.user.setUsername(argresult).then
       message.channel.send(`Changing The Name To ..**${argresult}** `)
 } else
-if (message.content.startsWith(adminprefix + 'setavatar')) {
+if (message.content.startsWith(adminprefix + 'av')) {
   client.user.setAvatar(argresult);
     message.channel.send(`Changing The Avatar To :**${argresult}** `);
 }
