@@ -5,7 +5,7 @@ const id = settings.id;
 const client = new Discord.Client();
 
 client.on('ready', () => {
-  console.log(`Hi ${client.user.tag} , This Code by : MASTER `);
+  console.log(`Hi ${client.user.tag} , This Code by : Jack `);
   console.log('')
   console.log(`i Have  [ " ${client.guilds.size} " ]`);
 });
